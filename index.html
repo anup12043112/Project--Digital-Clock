@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style1.css" id="style">
+</head>
+<body>
+    <section class="main flexBox">
+
+        <section class="clockBody flexBox">
+
+            <section class="titleBox flexBox">
+                <h1>DIGITAL CLOCK</h1>
+            </section>
+
+            <section class="clockBox flexBox">
+                <div class="currentTime flexBox">
+                    <p id="hour" class="time">00</p>
+                    <p class="colon">:</p>
+                    <p id="min" class="time">00</p>
+                    <p class="colon">:</p>
+                    <p id="sec" class="time">00</p>
+                </div>
+            </section>
+
+            <section class="themeBox flexBox">
+                <button id="theme" onclick="switchTheme()">⏾</button>
+            </section>
+
+        </section>
+       
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

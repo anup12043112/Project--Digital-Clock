@@ -1,0 +1,156 @@
+/* STYLE SHEET FOR DARK MODE  */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    font-size: 10px;
+}
+
+.flexBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FULL BODY  */
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(22, 42, 59);
+}
+
+.clockBody {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    background-color: rgb(37, 72, 103);
+}
+
+/* TITLE -- DIGITAL CLOCK  */
+.titleBox {
+    width: 100%;
+    height: 30%;
+    color: blanchedalmond;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    animation: title 5s linear infinite;
+}
+
+@keyframes title {
+    0% {
+        letter-spacing: 0.2rem;
+    }
+
+    50% {
+        letter-spacing: 0.5rem;
+    }
+
+    100% {
+        letter-spacing: 0.2rem;
+    }
+}
+
+.clockBox {
+    width: 100%;
+    height: 40%;
+}
+
+.currentTime {
+    width: 25rem;
+    height: 7rem;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+
+.time {
+    font-size: 3rem;
+    margin: 1rem 1rem;
+}
+
+.colon {
+    font-size: 2rem;
+}
+
+.themeBox {
+    width: 100%;
+    height: 30%;
+    align-items: start;
+    justify-content: right;
+}
+
+button {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    border-radius: .4rem;
+    border: none;
+    color: aliceblue;
+    background:linear-gradient(rgb(14, 47, 16), rgb(29, 29, 82));
+    margin-right: 10%;
+    box-shadow: 0 0 .2rem rgb(255, 255, 255);
+}
+button:hover{
+    cursor: pointer;
+    background:linear-gradient(rgb(29, 29, 82), rgb(14, 47, 16));
+}
+button:active{
+    filter: opacity(0);
+}
+
+@media (min-width:360px) and (max-width:600px) {
+
+    .clockBody {
+        width: 20rem;
+        height: 25rem;
+    }
+    h1 {
+        font-size: 1.6rem;
+        letter-spacing: .2rem;
+        animation: title 5s linear infinite;
+    }
+
+    @keyframes title {
+        0% {
+            letter-spacing: 0.2rem;
+        }
+
+        50% {
+            letter-spacing: 0.4rem;
+        }
+
+        100% {
+            letter-spacing: 0.2rem;
+        }
+    }
+    .currentTime {
+        width: 25rem;
+        height: 7rem;
+    }
+
+    .time {
+        font-size: 3rem;
+        margin: 1rem 1rem;
+    }
+
+    .colon {
+        font-size: 2rem;
+    }
+    #theme {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.6rem;
+        background:linear-gradient(rgb(25, 88, 29), rgb(54, 54, 153));
+    }
+}
